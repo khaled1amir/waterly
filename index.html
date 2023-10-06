@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waterly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      header {
+        width: 100%;
+        height: 100px;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .logo {
+        width: 120px;
+        height: 50px;
+        background-color: #9eddff;
+        color: black;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px 25px;
+      }
+
+      nav ul {
+        list-style-type: none;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        font-size: 18px;
+        font-family: sans-serif;
+        color: black;
+      }
+
+      #hero {
+        width: 100%;
+        height: 80vh;
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        min-width: 100%;
+        min-height: 100%;
+        background-color: transparent !important;
+      }
+
+      #hero #tagline {
+        font-family: "Young Serif", serif;
+        font-size: 60px;
+        letter-spacing: 3px;
+        overflow: visible;
+        width: 70%;
+        color: white;
+        text-align: center;
+        text-wrap: nowrap;
+      }
+
+      #hero #hero-img {
+        width: 600px;
+        transform: translateY(-50px);
+      }
+
+      .water-cycle {
+        width: 100%;
+        
+      }
+
+      .water-cycle .texts {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .water-cycle .text-box {
+        width: 600px;
+        height: 500px;
+        margin: 40px;
+        background-color: aquamarine;
+        padding: 0 20px;
+        border-radius: 5px 25px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  
+      }
+
+      .water-cycle .text-box h3 {
+        text-align: center;
+        font-size: 26px;
+        margin: 20px;
+        font-family: sans-serif;
+      }
+
+      .water-cycle .text-box p {
+        font-size: 18px;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        line-height: 26px;
+        font-family: sans-serif;
+      }
+
+      .water-cycle .text-box img {
+        margin-top: 30px;
+        width: 70%;
+        border-radius: 15px;
+      }
+
+      .climate {
+        background-color: #DAFFFB;
+        padding: 30px;
+      }
+
+
+      footer {
+        width: 100%;
+        background-color: #282828;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+      }
+
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" style="text-decoration: none; color: black;">
+        <div class="logo" style="font-family: sans-serif;">Waterly</div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Our Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h1 id="tagline">The story of the greatest asset</h1>
+
+      <video class="hero-bg" autoplay muted loop>
+        <source src="hero-video.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+
+
+    <section class="water-cycle">
+      <h1
+        id="water-cycle-title"
+        style="
+          margin: 20px;
+          text-align: center;
+          font-size: 42px;
+          font-weight: bold;
+          font-family: sans-serif;
+        "
+      >
+        The Water Cycle
+      </h1>
+
+      <div class="texts">
+        <div class="text-box">
+          <h3>What is water cycle?</h3>
+          <p>
+            The water cycle is the continuous movement of water around the world
+            in different forms, it involves various processes like
+            precipitation, evaporation, condensation, and much more. The water
+            cycle is what keeps our freshwater resources at a stable percentage,
+            and that means it is very crucial for the ecosystem.
+          </p>
+          <img src="water-cycle.png" alt="The water cycle">
+        </div>
+
+        <div class="text-box">
+          <h3>The evaporation process</h3>
+          <p>
+            The sun is the primary driver of the hydrological cycle, which moves
+            water in the oceans allowing it to evaporate into the water. The
+            rising air current takes vapor upward into the air, where cold
+            temperatures cause the water vapor to condense and move it into
+            clouds
+          </p>
+          <img src="evaporation.jpg" alt="The evaporation process">
+        </div>
+
+        <div class="text-box">
+          <h3>The condensation process</h3>
+          <p>
+            When vapored water goes upward, the temperature gets really low and
+            water starts to condensate into clouds when clouds get heavier water
+            condensate more as a result it turns into rains in a process called
+            precipitation
+          </p>
+          <img src="condensation.png" alt="The condensation process">
+        </div>
+
+        <div class="text-box">
+          <h3>The precipitation process</h3>
+          <p style="font-size: 18px">
+            When clouds get heavy, water flows onto the surface of the Earth as
+            running rainwater as a result of gravity. A portion of runoff
+            rainwater enters riverbeds and moves toward the oceans. Surface
+            rainwater and groundwater flow to form fresh water in lakes and
+            rivers. Although not all rainwater goes into rivers, much of it
+            seeps into the ground as seepage. Some of this water remains close
+            to the Earth's surface and can flow back into surface water bodies
+            (and oceans) to form groundwater.
+          </p>
+          <img src="percipitation.png" alt="The percipitation process">
+        </div>
+
+        <div class="text-box">
+          <h3>The infiltration process</h3>
+          <p>
+            When water falls down as rains, streams, or runoffs it starts to
+            move downward through the soil due to gravity which will replenish
+            the groundwater.
+          </p>
+          <img src="infiltration.png" alt="The infiltration process">
+        </div>
+
+        <div class="text-box">
+          <h3>The percolation process</h3>
+          <p>
+            Percolation occurs when water seeps into the ground at the surface
+            runoff stage into the ground. For this reason, in the past, they
+            used wells to bring water! It was underground! A well is an example
+            of groundwater. Groundwater is stored underground. Water under the
+            ground also helps plants grow!
+          </p>
+          <img src="percolation.jpg" alt="The percolation process" style="width: 350px;">
+        </div>
+
+        <div class="text-box">
+          <h3>The transpiration process</h3>
+          <p>
+            Plants absorb water through their roots which will lead to an upward
+            movement of water until it reaches the plants' leaves and gets to
+            the atmosphere through some tiny openings called stomata.
+          </p>
+          <img src="transpiration.jpg" alt="The transpiration process" style="width: 300px;">
+        </div>
+
+        <div class="text-box">
+          <h3>Conclution</h3>
+          <p>
+            Water cycle is a full system in nature that makes the water
+            ecosystem and if you understood it. Great Work ;)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="water-cycle climate">
+        <h1 style="
+        margin: 20px;
+        text-align: center;
+        font-size: 42px;
+        font-weight: bold;
+        font-family: sans-serif;
+      ">How Climate change is affecting water resources?</h2>
+        <div class="texts">
+          <div class="text-box">
+            <h3>Changing precipitation pattern:</h3>
+            <p>
+              leading to changes in the timing, intensity, and geographic
+              distribution of rainfall and flooding. These changes impact water
+              availability for humans and ecological systems.
+            </p>
+            <a href="https://earthobservatory.nasa.gov/global-maps/GPM_3IMERGM">
+              <img src="percipitation-climate.jpg">
+            </a>
+          </div>
+          <div class="text-box">
+            <h3>Melting glaciers and snowpacks:</h3>
+            <p>
+              - Rising temprature can accelerate the melting of glaciers and
+              snowpack, the reduced snow and ice storage can lead to water
+              scarcity during dry sessions.<br />
+              - In addition to sea level rise, climate change is causing more
+              floods and droughts to occur globally.
+            </p>
+              <img src="melting.jpg" style="width: 300px;">
+          </div>
+          <div class="text-box">
+            <h3>Changes in runoff and steam flow:</h3>
+            <p>
+              This can impact water supply for hydropower generation and
+              irrigation
+            </p>
+            <a href="https://www.mdpi.com/2073-4441/8/5/189">
+              <img src="runoff.jpg" style="width: 500px;">
+            </a>
+          </div>
+          <div class="text-box">
+            <h3>Water Quality impact:</h3>
+            <p>
+              increases intensity and frequency of extreme weather event. Can
+              also lead to more signification and contamination of water
+              sources.
+            </p>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128202005000117">
+              <img src="water-quality.jpg" style="width: 500px;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright © 2023 Waterly. All rights reserved.</p>
+    </footer>
+
+    <!-- Javascript File -->
+    <script src="main.js"></script>
+  </body>
+</html>
